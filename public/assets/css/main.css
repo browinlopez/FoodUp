@@ -58,20 +58,24 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-
-
-
-
 section {
   overflow: hidden;
   padding: 80px 0;
 }
 
 .section-bg {
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
 }
 
-.section-header {
+.background1 {
+  background-image: url("../img/FoodUp/membresia.png");
+  text-align: center;
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:center;
+}
+
+.section-header-header {
   text-align: center;
   padding-bottom: 30px;
 }
@@ -82,16 +86,34 @@ section {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: rgba(0, 85, 255, 0.8);
+  color: #3249D7;
   text-transform: uppercase;
   font-family: var(--font-default);
+  text-align: center;
+  
+
 }
+
+.section-header h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-family: var(--font-default);
+  text-align: center;
+
+}
+  
 
 .section-header p {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
   font-family: var(--font-primary);
+  text-align: center;
 }
 
 .section-header p span {
@@ -308,9 +330,13 @@ section {
   font-size: 14px;
   color: #000000;
   border-color:gray;
+  padding: 0 3px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f90;
   background:#ffffff;
-  padding: 8px 20px;
-  margin-left: 30px;
+  margin-left: 20px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -318,7 +344,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(0, 85, 255, 0.8);
+  background: #3249D7;
 }
 
 section {
@@ -748,21 +774,27 @@ section {
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us .why-box {
-    width: 280px;
+    width: 290px;
     height: 280px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: rgba(0, 85, 255, 0.8);
-    margin-top: 10px;
+    background: #3249D7;
+    border: rgb(255, 255, 255) 3px solid;
+    border-width: 5px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 80%;
     text-align: center;
+z-index: -1;
+  
 
 }
 
 .why-us .why-box h3 {
   font-weight: 100;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   margin-top: 30px;
   margin-left: 30px;
@@ -773,6 +805,8 @@ section {
 .why-us .why-box p {
   margin-bottom: 30px;
 }
+
+
 
 .why-us .why-box .more-btn {
   display: inline-block;
@@ -1063,31 +1097,58 @@ section {
 }
 
 .events .event-item {
-  background-size: cover;
-  background-position: cente;
+  margin-top: 50px;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
   min-height: 600px;
+  min-width: 450px;
   padding: 30px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 400px) {
   .events .event-item {
-    min-height: 500px;
+    min-height: 500x;
   }
 }
 
 .events .event-item:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0);
   position: absolute;
+  
   inset: 0;
+}
+.events .event-item h1 {
+  font-size:30px;
+  font-weight: 100;
+  color: #ffffff;
+  font-weight: 700;
+
 }
 
 .events .event-item h3 {
-  font-size: 24px;
+  font-size:20px;
+  font-weight: 100;
+  color: #FFB128;
   font-weight: 700;
-  margin-bottom: 5px;
-  color: #fff;
-  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.events .event-item p {
+  font-size:15px;
+  font-weight: 100;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
 }
 
 .events .event-item .price {
@@ -1554,7 +1615,6 @@ section {
   width: 100%;
   background-size: cover;
   position: relative;
-  min-height: 60vh;
   padding: 160px 0 60px 0;
 }
 
@@ -1566,14 +1626,23 @@ section {
   font-family: var(--font-primary);
 }
 
-.hero h2 span {
-  color: var(--color-primary);
+.hero p {
+
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-family: var(--font-default);
+  text-align: center;
 }
 
-.hero p {
-  color: #4f4f5a;
-  font-weight: 400;
-  margin-bottom: 30px;
+
+
+.hero h2 span {
+  color: var(--color-primary);
 }
 
 .hero .btn-book-a-table {
@@ -1739,19 +1808,62 @@ section {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: rgba(0, 85, 255, 0.8);
+    background: #3249D7;
     text-align: center;
 }
 
 .video-container
 {
-  top: 0%;
-  left: 0%;
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
+  margin: top 30px;
+  margin: right 30px;
+  margin: bottom 30px;
+  margin-left: 30px;
+  height: 1300;
+  width: 800;
+  position:absolute;
+  align-self: center;
 }
 
+.bordes-transparentes{
+  background:rgba(255, 255, 255, 0);
+  border: 15px solid rgba(0, 0, 0, 0);
+  padding: 10px 10px 0 10px;
+  border-radius: 5px;    
+  position:absolute;
+  top:45px;
+  left:10%;
+  width:250px;}
+
+#padding_box{background-clip: padding-box;}
+
+
+.boton1 {
+
+  background: rgb(235, 158, 5);
+  border-radius: 50px;
+  width:200px; 
+  height:60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 20px;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0);
+  background-position-x:center;
+  background-position-y:center;
+
+}
+
+.paso1 h3 {
+  font-size:20px;
+  font-weight: 100;
+color: 'black';
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px
+}
 
 
 
